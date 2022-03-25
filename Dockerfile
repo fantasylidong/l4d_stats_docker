@@ -2,7 +2,7 @@ FROM php:7.4.12-fpm-alpine
 
 
 RUN apt-get update && \
-    apt-get install -y git p7zip-full nano \
+    apt-get install -y git p7zip-full nano ping\
         wget \
     && \
     rm -rf /var/lib/apt/lists/*
