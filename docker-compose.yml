@@ -1,0 +1,9 @@
+version: 1.0
+services:
+  sourcebans:
+    image: morzlee/l4dstats
+    volumes:
+      - l4dstats:/var/www/html/
+    ports:
+    - "80:80"
+    - "443:443"
