@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM FROM php:7.4.12-fpm-alpine
 
 
 RUN apt-get update && \
@@ -12,7 +12,7 @@ RUN mkdir /usr/src/l4dstats/ && \
     mkdir /docker/
 
 # Install Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+#RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 RUN savedAptMark="$(apt-mark showmanual)" && \
     apt-get update && \
