@@ -2,7 +2,7 @@ FROM php:7.4-apache
 
 
 RUN apt-get update && \
-    apt-get install -y git p7zip-full nano ping\
+    apt-get install -y git p7zip-full nano inetutils-ping\
         wget \
     && \
     rm -rf /var/lib/apt/lists/*
